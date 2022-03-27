@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +21,10 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('contacts', [App\Http\Controllers\ContactController::class, 'contacts']);
-Route::post('save_contact', [App\Http\Controllers\ContactController::class, 'saveContact']);
+Route::get('contacts', [ContactController::class, 'contacts']);
+Route::post('save_contact', [ContactController::class, 'saveContact']);
 
-Route::get('get_contact/{id}', [App\Http\Controllers\ContactController::class, 'getContact']);
-Route::post('update_contact/{id}', [App\Http\Controllers\ContactController::class, 'updateContact']);
+Route::get('get_contact/{id}', [ContactController::class, 'getContact']);
+Route::post('update_contact/{id}', [ContactController::class, 'updateContact']);
 
-Route::delete('delete_contact/{id}', [App\Http\Controllers\ContactController::class, 'deleteContact']);
+Route::delete('delete_contact/{id}', [ContactController::class, 'deleteContact']);

@@ -59,9 +59,6 @@ class ContactController extends Controller
         ]);
     }
 
-    Next class gulo te boi niye asbe sobai. Tutorial exam ar ag porjonto.
-    R board a asa mcq + cq gulo practice kore felo. kono problem hole amake dekhau class a. 
-    Tutorial a tomader onek valo marks pete hobe. R ami asa kori tomra pabe insha Allah.
 
     public function deleteContact($id){
         $contact = Contact::find($id);
